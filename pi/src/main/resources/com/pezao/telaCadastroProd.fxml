@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pezao.CadastroProdController">
+   <children>
+      <Button fx:id="btnCadastrar" layoutX="386.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlerCadastrarProduto" text="Cadastrar" />
+      <TextField fx:id="tfDescricao" layoutX="345.0" layoutY="56.0" />
+      <TextField fx:id="tfTamanho" layoutX="345.0" layoutY="88.0" />
+      <TextField fx:id="tfQuantidade" layoutX="345.0" layoutY="125.0" />
+      <Label layoutX="344.0" layoutY="19.0" text="Cadastrar Produtos" underline="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="60.0" text="Descrição" />
+      <Label layoutX="287.0" layoutY="92.0" text="Tamanho" />
+      <Label layoutX="276.0" layoutY="128.0" text="Quantidade" />
+      <TextField fx:id="tfModelo" layoutX="345.0" layoutY="164.0" />
+      <TextField fx:id="tfMarca" layoutX="345.0" layoutY="200.0" />
+      <TextField fx:id="tfDataCadastro" layoutX="345.0" layoutY="236.0" />
+      <Label layoutX="297.0" layoutY="168.0" text="Modelo" />
+      <Label layoutX="301.0" layoutY="204.0" text="Marca" />
+      <Label layoutX="245.0" layoutY="240.0" text="Data de Cadastro" />
+      <TextField fx:id="tfObservacao" layoutX="345.0" layoutY="275.0" />
+      <Label layoutX="276.0" layoutY="279.0" text="Observação" />
+      <StackPane layoutX="58.0" layoutY="-177.0" prefHeight="150.0" prefWidth="200.0" />
+      <Line endX="3.0" endY="-87.0" layoutX="215.0" layoutY="87.0" startX="3.0" startY="313.0" />
+      <Pane prefHeight="401.0" prefWidth="216.0" style="-fx-background-color: #e9eb55;">
+         <children>
+            <Text layoutX="19.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pezão Sistemas" underline="true">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="19.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preencha os campos para ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="11.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cadastrar um produto no estoque">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
